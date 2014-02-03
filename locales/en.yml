@@ -1,0 +1,7 @@
+---
+en:
+  titles:
+    hello_world: 'Hello World!'
+
+  copyright: "Copyright &copy; %{year} <a href='%{url}'>%{name}</a>. All rights reserved."
+  loading: 'Loading...'

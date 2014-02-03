@@ -1,0 +1,44 @@
+nav.navbar.navbar-default.navbar-fixed-top role='navigation' data-ui-scope='navbar'
+  div.container
+
+    / Nav Header
+    div.navbar-header
+      button.navbar-toggle type='button' data-toggle='collapse' data-target='#navigation'
+        i.fa.fa-bars
+      a.navbar-brand href='/' = data.general.website.name
+
+    / Nav Links
+    div#navigation.collapse.navbar-collapse
+      / left list
+      ul.nav.navbar-nav
+        / single link
+        li
+          a href='#' Link
+        / dropdown link
+        li.dropdown
+          a.dropdown-toggle href='#' data-toggle='dropdown'
+            span Dropdown
+            b.caret
+          ul.dropdown-menu
+            li
+              a href='#' Link
+            li.divider
+            li
+              a href='#' Link
+
+      / right list
+      ul.nav.navbar-nav.navbar-right
+        / single link
+        li
+          a href='#' Link
+        / dropdown link
+        li.dropdown
+          a.dropdown-toggle href='#' data-toggle='dropdown'
+            span Dropdown
+            b.caret
+          ul.dropdown-menu
+            li
+              a href='#' Link
+            li.divider
+            li
+              a href='#' Link

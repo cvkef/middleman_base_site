@@ -1,0 +1,7 @@
+footer
+  div.container.text-sm
+    div.row
+      div.col-xs-12
+        = I18n.t :copyright,  year: Time.now.year,
+                               url: data.general.website.url,
+                              name: data.general.website.name

@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title = page_title(current_page.data.title)
+
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
+
+    = favicon_tag             'images/favicon.png'
+    = stylesheet_link_tag     'style', media: 'all'
+    = javascript_include_tag  'application'
+
+    / HTML5 support for IE8
+    /= javascript_include_tag 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'
+    /= javascript_include_tag 'https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'
+
+  body class="#{page_classes}"
+
+    div#page
+      / Nav
+      = partial 'shared/nav'
+      / Header
+      = partial 'shared/header'
+      / Main
+      div#main
+        div.container
+          = yield
+
+    / Footer
+    = partial 'shared/footer'
+    / Back To Top
+    = partial 'shared/back_to_top'
+    / Loading Overlay
+    = partial 'shared/loading_overlay'
