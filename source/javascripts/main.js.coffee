@@ -78,10 +78,11 @@ uiLoadingOverlay = {}
       uiNavbar = new UI.Navbar $('[data-ui-scope="navbar"]'), $
       uiNavbar.bindListeners()
       #
-      uiLoadingOverlay = new UI.LoadingOverlay $('[data-ui-scope="loading"]'), $
-      #
       uiBackToTop = new UI.BackToTop $('[data-ui-scope="backToTop"]'), $
       uiBackToTop.bindListeners()
+      #
+      uiLoadingOverlay = new UI.LoadingOverlay $('[data-ui-scope="loading"]'), $
+      uiLoadingOverlay.hide()
 
     # Pseudo Links
     .on 'click.pseudoLink', 'a[href="#"], a.pseudo', (e) ->

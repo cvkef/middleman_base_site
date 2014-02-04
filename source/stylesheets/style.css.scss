@@ -1000,7 +1000,8 @@ $container-lg:                 $container-large-desktop !default;
   }
 
   // Loading Overlay
-  #loading-overlay {
+  &#loading-overlay {
+    display: block;
   }
 }
 
