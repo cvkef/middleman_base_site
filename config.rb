@@ -10,7 +10,7 @@ set :slim, pretty: true
 ###########################
 # Browser Auto-Reload
 ###########################
-activate :livereload
+activate :livereload, no_swf: true
 
 
 ###########################
