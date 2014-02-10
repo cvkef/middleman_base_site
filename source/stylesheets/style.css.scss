@@ -952,11 +952,20 @@ $container-lg:                 $container-large-desktop !default;
 ////////////////////////////////
 // Forms :: Placeholder
 ////////////////////////////////
-::-webkit-input-placeholder,
-:-ms-input-placeholder,
-::-moz-placeholder,
+::-webkit-input-placeholder {
+  color: darken($app-clr-white, 15%) !important;
+  font-weight: 200;
+}
+:-ms-input-placeholder {
+  color: darken($app-clr-white, 15%) !important;
+  font-weight: 200;
+}
+::-moz-placeholder {
+  color: darken($app-clr-white, 15%) !important;
+  font-weight: 200;
+}
 :-moz-placeholder {
-  color: darken($app-clr-white, 20%) !important;
+  color: darken($app-clr-white, 15%) !important;
   font-weight: 200;
 }
 
